@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+    <ImageView
+        android:id="@+id/imageView_poster"
+        android:layout_width="120dp"
+        android:layout_height="120dp"/>
+
+    <TextView
+        android:id="@+id/category_l1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/imageView_poster"
+        android:layout_margin="2dp"
+        android:textSize="20sp"
+        android:textStyle="bold"/>
+
+    <TextView
+        android:id="@+id/amount_l1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/imageView_poster"
+        android:layout_below="@id/category_l1"
+        android:layout_marginLeft="10dp"
+        android:textSize="20sp"/>
+    <TextView
+        android:id="@+id/date_l1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/imageView_poster"
+        android:layout_below="@id/amount_l1"
+        android:layout_margin="2dp"
+        android:textSize="20sp"/>
+    <TextView
+        android:id="@+id/discription_l1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/imageView_poster"
+        android:layout_below="@id/date_l1"
+        android:layout_margin="2dp"
+        android:textSize="20sp"/>
+
+</RelativeLayout>

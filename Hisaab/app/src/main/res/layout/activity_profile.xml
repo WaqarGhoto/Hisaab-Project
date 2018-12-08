@@ -1,0 +1,329 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.dell.hisaab.Profile">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <android.support.v7.widget.Toolbar
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="@color/colorPrimary"
+            android:id="@+id/toolbar"
+            android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+            app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+            android:elevation="4dp">
+
+        </android.support.v7.widget.Toolbar>
+
+    </LinearLayout>
+    <android.support.design.widget.NavigationView
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_gravity="start"
+        android:id="@+id/nav_view"
+        app:headerLayout="@layout/nav_header"
+        app:menu="@menu/draw_menu"></android.support.design.widget.NavigationView>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="10dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/user_image"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="0dp"
+                    android:background="@drawable/log_icon"
+                    android:contentDescription="@string/action_sign_in"
+                    android:padding="16dp" />
+
+                <TextView
+                    android:id="@+id/user_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:paddingTop="5dp"
+                    android:text="Waqar Ahmad"
+                    android:textAlignment="center"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:textSize="29dp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    android:paddingTop="0dp"
+                    android:text="Student"
+                    android:textAlignment="center"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:textSize="29dp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/itembackground"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="140dp"
+                    android:layout_height="80dp"
+                    android:layout_gravity="center"
+                    android:paddingLeft="5dp"
+                    android:paddingTop="15dp"
+                    android:text="Income "
+                    android:textColor="#000"
+                    android:textSize="25dp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/user_income"
+                    android:layout_width="110dp"
+                    android:layout_height="80dp"
+                    android:layout_gravity="center"
+                    android:paddingLeft="5dp"
+                    android:paddingTop="15dp"
+                    android:text="$10000 "
+                    android:textColor="#000"
+                    android:textSize="25dp"
+                    android:textStyle="bold" />
+
+                <Button
+                    android:id="@+id/income_btn"
+                    android:layout_width="80dp"
+                    android:innerRadius="0dp"
+                    android:shape="ring"
+                    android:thicknessRatio="1.9"
+                    android:useLevel="false"
+
+                    android:layout_height="80dp"
+                    android:layout_gravity="left"
+                    android:layout_marginRight="15dp"
+                    android:layout_marginTop="0dp"
+                    android:background="@drawable/expenseimage"
+                    android:contentDescription="@string/action_sign_in"
+                    android:padding="16dp"
+
+                    />
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="5dp"
+                android:background="#f9d7db" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/itembackground"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="140dp"
+                    android:layout_height="80dp"
+                    android:layout_gravity="center"
+                    android:paddingLeft="5dp"
+                    android:paddingTop="15dp"
+                    android:text="Expense "
+                    android:textColor="#000"
+                    android:textSize="25dp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/user_expense"
+                    android:layout_width="110dp"
+                    android:layout_height="80dp"
+                    android:layout_gravity="center"
+                    android:paddingTop="15dp"
+                    android:text="$10000 "
+                    android:textColor="#000"
+                    android:textSize="25dp"
+                    android:textStyle="bold" />
+
+                <Button
+                    android:id="@+id/expense_btn"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:layout_gravity="left"
+                    android:layout_marginRight="15dp"
+
+                    android:background="@drawable/expenseimage"
+                    android:contentDescription="@string/action_sign_in"
+                    android:padding="16dp"
+                    android:layout_marginTop="3dp"
+
+                    />
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="5dp"
+                android:background="#f9d7db" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/itembackground"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="140dp"
+                    android:layout_height="80dp"
+                    android:layout_gravity="center"
+                    android:paddingTop="15dp"
+                    android:text="Goal  or Saving"
+                    android:textColor="#000"
+                    android:textSize="25dp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/showincom"
+                    android:layout_width="110dp"
+                    android:layout_height="80dp"
+                    android:layout_gravity="center"
+                    android:paddingTop="15dp"
+                    android:text="$10000 "
+                    android:textColor="#000"
+                    android:textSize="25dp"
+                    android:textStyle="bold" />
+
+                <Button
+                    android:id="@+id/goal_btn"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:layout_gravity="left"
+                    android:layout_marginRight="15dp"
+                    android:layout_marginTop="0dp"
+                    android:background="@drawable/moneysaving"
+                    android:contentDescription="@string/action_sign_in"
+                    android:padding="16dp"
+
+                    />
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="5dp"
+                android:background="#f9d7db" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/itembackground"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="140dp"
+                    android:layout_height="80dp"
+                    android:layout_gravity="center"
+                    android:paddingTop="15dp"
+                    android:text="Recived Loans"
+                    android:textColor="#000"
+                    android:textSize="25dp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/showincome"
+                    android:layout_width="110dp"
+                    android:layout_height="80dp"
+                    android:layout_gravity="center"
+                    android:paddingTop="15dp"
+                    android:text="$10000 "
+                    android:textColor="#000"
+                    android:textSize="25dp"
+                    android:textStyle="bold" />
+
+                <Button
+                    android:id="@+id/rloan_btn"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:layout_gravity="left"
+                    android:layout_marginRight="15dp"
+                    android:layout_marginTop="0dp"
+                    android:background="@drawable/recivedloan"
+                    android:contentDescription="@string/action_sign_in"
+                    android:padding="16dp"
+
+                    />
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="5dp"
+                android:background="#f9d7db" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/itembackground"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="140dp"
+                    android:layout_height="80dp"
+                    android:layout_gravity="center"
+                    android:paddingTop="15dp"
+                    android:text="Given Loans"
+                    android:textColor="#000"
+                    android:textSize="25dp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/gincome"
+                    android:layout_width="110dp"
+                    android:layout_height="80dp"
+                    android:layout_gravity="center"
+                    android:paddingTop="15dp"
+                    android:text="$10000 "
+                    android:textColor="#000"
+                    android:textSize="25dp"
+                    android:textStyle="bold" />
+
+                <Button
+                    android:id="@+id/gloan_btn"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:layout_gravity="left"
+                    android:layout_marginRight="15dp"
+                    android:layout_marginTop="0dp"
+                    android:background="@drawable/giveloans"
+                    android:contentDescription="@string/action_sign_in"
+                    android:padding="16dp"
+
+                    />
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="5dp"
+                android:background="#f9d7db" />
+
+
+        </LinearLayout>
+    </ScrollView>
+
+</android.support.v4.widget.DrawerLayout>

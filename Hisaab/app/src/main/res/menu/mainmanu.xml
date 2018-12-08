@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view"
+    tools:context="com.example.dell.hisaab.Profile">
+
+
+    <item android:id="@+id/home"
+        android:title="@string/home"
+        android:icon="@drawable/ic_home"
+
+        />
+
+    <item android:id="@+id/Profile"
+        android:title="@string/profile"
+        android:icon="@drawable/ic_person"
+        />
+    <item android:id="@+id/addincomem"
+        android:title="Add Income"
+        android:icon="@drawable/ic_attach_money"
+        />
+    <item android:id="@+id/addexpensem"
+        android:title="Add Expense"
+        android:icon="@drawable/ic_attach_money"
+        />
+    <item android:id="@+id/addgoalm"
+        android:title="Add Goal"
+        android:icon="@drawable/ic_attach_money"
+        />
+    <item android:id="@+id/reciveloanm"
+        android:title="Recive Loan"
+        android:icon="@drawable/ic_attach_money"
+        />
+    <item android:id="@+id/giveloanm"
+        android:title="Give Loan"
+        android:icon="@drawable/ic_attach_money"
+        />
+    <item android:id="@+id/income"
+        android:title="@string/myIncome"
+        android:icon="@drawable/ic_list"
+        />
+    <item android:id="@+id/expense"
+        android:title="@string/myExpense"
+        android:icon="@drawable/ic_list"
+        />
+    <item android:id="@+id/goal"
+        android:title="@string/myGoals"
+        android:icon="@drawable/ic_list"
+        />
+    <item android:id="@+id/reciveloans"
+        android:title="@string/ReciveLoans"
+        android:icon="@drawable/ic_list"
+        />
+    <item android:id="@+id/mylons"
+        android:title="@string/myloans"
+        android:icon="@drawable/ic_list"
+        />
+    <item android:id="@+id/logout"
+        android:title="@string/logout"
+        android:icon="@drawable/ic_lock"
+        />
+</menu>

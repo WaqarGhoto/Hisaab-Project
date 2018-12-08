@@ -1,0 +1,202 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.dell.hisaab.Giveloan">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="20dp"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="240dp"
+                android:layout_height="120dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="20dp"
+                android:contentDescription="@string/action_sign_in"
+                android:padding="16dp"
+                android:src="@drawable/log_icon" />
+            <TextView
+                android:id="@+id/giveloan_tag"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:paddingTop="5dp"
+                android:textAlignment="center"
+                android:text="Give Loan"
+                android:textSize="29dp"
+                android:textStyle="bold"
+                android:textColor="@color/colorAccent"
+                />
+
+            <EditText
+                android:id="@+id/reciver_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:background="@android:color/transparent"
+                android:drawablePadding="12dp"
+                android:ems="10"
+                android:hint="Reciver Name :"
+                android:inputType="text"
+                android:maxLines="1"
+                android:padding="8dp"
+                android:textColorHint="#A4A1A1"
+                />
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:background="#f9d7db"/>
+            <EditText
+                android:id="@+id/reciver_cnic"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:background="@android:color/transparent"
+                android:drawablePadding="12dp"
+                android:ems="10"
+                android:hint="Reciver Identity (CNIC):"
+                android:inputType="text"
+                android:maxLines="1"
+                android:padding="8dp"
+                android:textColorHint="#A4A1A1"
+                />
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:background="#f9d7db"/>
+            <EditText
+                android:id="@+id/r_amount"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:background="@android:color/transparent"
+                android:drawablePadding="12dp"
+                android:ems="10"
+                android:hint="Loan Amount :"
+                android:inputType="number"
+                android:maxLines="1"
+                android:padding="8dp"
+                android:textColorHint="#A4A1A1"
+                />
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:background="#f9d7db"/>
+            <EditText
+                android:id="@+id/intrest_amount"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:background="@android:color/transparent"
+                android:drawablePadding="12dp"
+                android:ems="10"
+                android:hint="Intrest Amount (Optional) :"
+                android:inputType="number"
+                android:maxLines="1"
+                android:padding="8dp"
+                android:textColorHint="#A4A1A1"
+                />
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:background="#f9d7db"/>
+            <EditText
+                android:id="@+id/rloandiscription"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:background="@android:color/transparent"
+                android:drawablePadding="12dp"
+                android:ems="10"
+                android:hint="write discription  (optional) :"
+                android:inputType="number"
+                android:maxLines="1"
+                android:padding="8dp"
+                android:textColorHint="#A4A1A1"
+                />
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:background="#f9d7db"/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_width="240dp"
+                    android:layout_height="match_parent"
+                    android:ems="10"
+                    android:textStyle="bold"
+                    android:textSize="26dp"
+                    android:hint="Loan give date"
+                    android:id="@+id/reciveview"/>
+                <Button
+                    android:layout_width="100dp"
+                    android:layout_height="match_parent"
+                    android:text="Date"
+
+                    android:background="@color/colorPrimaryDark"
+                    android:id="@+id/btnrecive"/>
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:background="#f9d7db"/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_width="240dp"
+                    android:layout_height="match_parent"
+                    android:ems="10"
+                    android:textStyle="bold"
+                    android:textSize="26dp"
+                    android:hint="loan return "
+                    android:id="@+id/returnview"/>
+                <Button
+                    android:layout_width="100dp"
+                    android:layout_height="match_parent"
+                    android:text="date"
+
+                    android:background="@color/colorPrimaryDark"
+                    android:id="@+id/btnReturn"/>
+
+            </LinearLayout>
+
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:background="#f9d7db"/>
+
+            <Button
+                android:id="@+id/save_btn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/signup"
+                android:layout_marginTop="10dp"
+                android:text="Save"
+                android:textStyle="bold"
+                android:textSize="22dp"
+                android:textColor="@android:color/white"
+                android:clickable="true"
+                android:textAllCaps="false"
+                android:paddingBottom="0dp"
+                />
+
+
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>
